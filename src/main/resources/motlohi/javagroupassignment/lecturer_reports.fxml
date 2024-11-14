@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="919.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motlohi.javagroupassignment.lecturer_reports">
+   <children>
+      <Pane fx:id="tbltable" prefHeight="400.0" prefWidth="842.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="reportTable" layoutX="19.0" layoutY="40.0" prefHeight="268.0" prefWidth="877.0">
+              <columns>
+                <TableColumn fx:id="report_id" prefWidth="75.0" text="report_id" />
+                <TableColumn fx:id="lecture_id" prefWidth="75.0" text="lecture_id" />
+                  <TableColumn fx:id="module_id" prefWidth="75.0" text="module_id" />
+                  <TableColumn fx:id="class_id" prefWidth="75.0" text="class_id" />
+                  <TableColumn fx:id="week_number" prefWidth="93.0" text="week_number" />
+                  <TableColumn fx:id="challenges" prefWidth="75.0" text="challenge" />
+                  <TableColumn fx:id="recommendations" prefWidth="204.0" text="recommendations" />
+                  <TableColumn fx:id="created_at" prefWidth="204.0" text="created_at" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnok" layoutX="548.0" layoutY="324.0" mnemonicParsing="false" onAction="#ok" text="ok" />
+            <Button fx:id="btncancel" layoutX="428.0" layoutY="324.0" mnemonicParsing="false" onAction="#cancel" text="cancel" />
+            <Label fx:id="lblmessage" layoutX="162.0" layoutY="1.0" prefHeight="35.0" prefWidth="600.0" text="LIMKOKWING UNIVERSITY  Lecture report view" textFill="RED">
+               <font>
+                  <Font name="Algerian" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

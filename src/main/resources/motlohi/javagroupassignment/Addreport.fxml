@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motlohi.javagroupassignment.Addreport">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="120.0" layoutY="16.0" prefHeight="40.0" prefWidth="319.0" text="ADD LECTURER REPORT">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblreport_id" layoutX="66.0" layoutY="79.0" prefHeight="34.0" prefWidth="96.0" text="report_id" />
+            <Label fx:id="lbllecture_id" layoutX="65.0" layoutY="110.0" prefHeight="34.0" prefWidth="96.0" text="lecture_id" />
+            <Label fx:id="lblmodule_id" layoutX="64.0" layoutY="144.0" prefHeight="34.0" prefWidth="96.0" text="module_id" />
+            <Label fx:id="lblclass_id" layoutX="65.0" layoutY="177.0" prefHeight="34.0" prefWidth="96.0" text="class_id" />
+            <Label fx:id="lblweek_number" layoutX="64.0" layoutY="211.0" prefHeight="34.0" prefWidth="96.0" text="week_number" />
+            <Label fx:id="lblchallenges" layoutX="63.0" layoutY="245.0" prefHeight="34.0" prefWidth="96.0" text="challenges" />
+            <Label fx:id="lblrecommendations" layoutX="64.0" layoutY="281.0" prefHeight="34.0" prefWidth="108.0" text="recommendations" />
+            <TextField fx:id="txtreport_id" layoutX="219.0" layoutY="84.0" prefHeight="25.0" prefWidth="313.0" />
+            <TextField fx:id="txtlecture_id" layoutX="219.0" layoutY="118.0" prefHeight="25.0" prefWidth="313.0" />
+            <TextField fx:id="txtmodule_id" layoutX="220.0" layoutY="150.0" prefHeight="25.0" prefWidth="313.0" />
+            <TextField fx:id="txtchallenges" layoutX="219.0" layoutY="249.0" prefHeight="25.0" prefWidth="313.0" />
+            <TextField fx:id="txtrecommandations" layoutX="220.0" layoutY="285.0" prefHeight="25.0" prefWidth="313.0" />
+            <Button fx:id="btnsave" layoutX="429.0" layoutY="326.0" mnemonicParsing="false" onAction="#save" text="save" />
+            <Button fx:id="btncancel" layoutX="300.0" layoutY="326.0" mnemonicParsing="false" onAction="#cancel" text="cancel" />
+            <TextField fx:id="txtclass_id" layoutX="220.0" layoutY="183.0" prefHeight="25.0" prefWidth="313.0" />
+            <TextField fx:id="txtweek_number" layoutX="219.0" layoutY="216.0" prefHeight="25.0" prefWidth="313.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

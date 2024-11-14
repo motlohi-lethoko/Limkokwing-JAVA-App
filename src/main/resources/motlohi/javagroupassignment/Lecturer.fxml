@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefWidth="478.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="motlohi.javagroupassignment.Lecturer">
+   <Pane layoutX="54.0" layoutY="39.0" prefHeight="31.0" prefWidth="371.0" style="-fx-background-color: white;" />
+    <Button fx:id="markPresentButton" layoutX="34.0" layoutY="163.0" onAction="#DASHBOARD" text="back" />
+   <Button layoutX="229.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Present" />
+   <Button layoutX="353.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Absent" />
+   <ChoiceBox fx:id="ChoiceStu" layoutX="56.0" layoutY="14.0" prefHeight="25.0" prefWidth="173.0" />
+   <Label layoutX="151.0" layoutY="14.0" prefHeight="25.0" prefWidth="59.0" text="   name" />
+   <TextField fx:id="studentname" layoutX="56.0" layoutY="39.0" prefHeight="31.0" prefWidth="173.0" />
+   <CheckBox fx:id="presentID" layoutX="275.0" layoutY="46.0" mnemonicParsing="false" onAction="#updatePresentId" />
+   <CheckBox fx:id="AbsentID" layoutX="382.0" layoutY="46.0" mnemonicParsing="false" onAction="#upadateAbsent" />
+   <Label layoutX="325.0" layoutY="214.0" />
+</AnchorPane>

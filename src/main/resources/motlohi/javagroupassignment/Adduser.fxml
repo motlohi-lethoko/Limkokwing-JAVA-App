@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motlohi.javagroupassignment.Adduser">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblUserid" layoutX="245.0" layoutY="73.0" prefHeight="40.0" prefWidth="145.0" text="Userid" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserid" layoutX="399.0" layoutY="81.0" prefHeight="25.0" prefWidth="164.0" />
+            <TextField fx:id="txtUsername" layoutX="400.0" layoutY="126.0" prefHeight="25.0" prefWidth="164.0" />
+            <TextField fx:id="txtPassword" layoutX="400.0" layoutY="170.0" prefHeight="25.0" prefWidth="164.0" />
+            <TextField fx:id="txtRole" layoutX="400.0" layoutY="212.0" prefHeight="25.0" prefWidth="164.0" />
+            <Button fx:id="btnOk" layoutX="503.0" layoutY="262.0" mnemonicParsing="false" onAction="#Ok" prefHeight="25.0" prefWidth="51.0" text="OK" />
+            <ImageView fitHeight="214.0" fitWidth="215.0" layoutX="14.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@limkos-les.jpeg" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblmessage" layoutX="122.0" layoutY="10.0" prefHeight="56.0" prefWidth="362.0" text="#MightyMalasians" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="btncancel" layoutX="414.0" layoutY="262.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="51.0" text="cancel" />
+         </children>
+      </Pane>
+      <Label fx:id="lblUsername" layoutX="244.0" layoutY="117.0" prefHeight="40.0" prefWidth="145.0" text="Username" textFill="#fffefe">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPassword" layoutX="245.0" layoutY="161.0" prefHeight="40.0" prefWidth="145.0" text="Password" textFill="#fffefe">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRole" layoutX="247.0" layoutY="206.0" prefHeight="40.0" prefWidth="145.0" text="Role" textFill="#fffefe">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
